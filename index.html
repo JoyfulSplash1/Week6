@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptocurrency Converter</h1>
+
+    <div class="converter">
+      <div>
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+     <div class=" converter_select">
+        <select id="fromCrypto">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="BNB">Binance Coin (BNB)</option>
+          </select>
+          <span>to</span>
+          <select id="toCrypto">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="BNB">Binance Coin (BNB)</option>
+          </select>
+          <button onclick="convertCrypto()">Convert</button>
+     </div>
+    </div>
+
+    <h2 id="result">Converted Amount: -</h2>
+
+    <div class="prices">
+      <h3>Live Prices (in USD)</h3>
+      <p>Bitcoin (BTC): <span id="btcPrice">Loading...</span></p>
+      <p>Ethereum (ETH): <span id="ethPrice">Loading...</span></p>
+      <p>Binance Coin (BNB): <span id="bnbPrice">Loading...</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
